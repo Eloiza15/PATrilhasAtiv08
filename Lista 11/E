@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba uma lista de strings como parâmetro e retorne uma
+//única string que contém todos os elementos da lista concatenados.
+
+static string concatenar (List<string> strings){
+	
+	return string.Join("",strings);
+}
+
+ public static void Main()
+        {
+ 	
+ 	List<string> strings = new List<string>();
+ 	
+ 	Console.WriteLine("Quantas palavras você quer colocar na lista?");
+
+ 	int quantidade = int.Parse(Console.ReadLine());
+ 	
+ 	for (int i = 1; i <= quantidade; i++){
+ 		 
+ 		Console.WriteLine("Digite a palavra " + i + " da lista");
+ 		string palavra = Console.ReadLine();
+ 		strings.Add(palavra);
+ 	}
+ 	
+ 	string resultado =  concatenar(strings);
+ 	Console.WriteLine("Todos os elementos da lista concatenados: " + resultado);
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
