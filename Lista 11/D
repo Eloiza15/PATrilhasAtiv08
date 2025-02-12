@@ -1,0 +1,41 @@
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba uma lista de números inteiros como parâmetro e
+//retorne o maior número da lista.
+
+static int maiorNum (List<int> numeros){
+	
+	return numeros.Max();
+}
+
+ public static void Main()
+        {
+ 	
+ 	List<int> numeros = new List<int>();
+ 	
+ 	Console.WriteLine("Quantos números inteiros você quer colocar na lista?");
+ 	int quantidade = int.Parse(Console.ReadLine());
+ 	
+ 	for (int i = 1; i <= quantidade; i++){
+ 		 
+ 		Console.WriteLine("Digite o numero " + i + " da lista");
+ 		int numero = int.Parse(Console.ReadLine());
+ 		numeros.Add(numero);
+ 	}
+ 	
+ 	int resultado =  maiorNum(numeros);
+ 	Console.WriteLine("O maior número da lista é: " + resultado);
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
