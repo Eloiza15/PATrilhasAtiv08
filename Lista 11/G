@@ -1,0 +1,39 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba uma string como parâmetro e retorne uma nova string
+//contendo apenas os caracteres em posições ímpares.
+	
+static string posicoes (string texto){
+	
+	string resultado = "";
+	
+            for (int i = 1; i < texto.Length; i += 2)  
+            {
+                resultado += texto[i];  
+            }
+            
+      return resultado;
+	
+}
+
+ public static void Main()
+        {
+ 	
+ 	Console.WriteLine("Digite uma string:");
+    string texto = Console.ReadLine();
+ 	
+    string resultado = posicoes(texto);
+    
+    Console.WriteLine("Nova string contendo apenas os caracteres em posições ímpares: " + resultado);
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
