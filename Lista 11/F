@@ -1,0 +1,36 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba um número inteiro como parâmetro e retorne
+//verdadeiro se o número for par e falso se o número for ímpar.
+	
+static bool verFal (int numero){
+	
+	if (numero%2 == 0){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+ public static void Main()
+        {
+ 	
+ 	Console.WriteLine("Digite um número inteiro");
+ 	int numero = int.Parse(Console.ReadLine());
+ 	
+ 	bool resultado = verFal(numero);
+ 	
+ 	Console.WriteLine("Esse número é: " + resultado);
+
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
