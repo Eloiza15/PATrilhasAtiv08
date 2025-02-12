@@ -1,0 +1,32 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba uma string como parâmetro e retorne o número de
+//caracteres na string.
+	
+static int caracteres (string texto){
+	
+	return texto.Length;
+}
+
+public static void Main()
+        {
+	
+	Console.WriteLine("Digite um texto para mostrarmos o número de caracteres na string");
+	string texto = Console.ReadLine();
+	
+	int numCaracteres = caracteres(texto);
+	
+	Console.WriteLine("Número de caracteres na string: " + numCaracteres);
+		
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
