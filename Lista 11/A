@@ -1,0 +1,28 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba um número inteiro como parâmetro e retorne seu
+//quadrado.
+    	
+static int quadrado (int numero){
+	
+	return numero*numero;
+}
+        public static void Main()
+        {
+        	Console.WriteLine("Digite um número para mostrarmos seu quadrado:");
+            int numero = int.Parse(Console.ReadLine());
+            
+            int resultado = quadrado(numero);
+            Console.WriteLine("O quadrado de: " + numero + " é " + resultado);
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
