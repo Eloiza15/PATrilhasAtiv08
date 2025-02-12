@@ -1,0 +1,33 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba dois números inteiros como parâmetros e retorne a
+//soma deles.
+	
+static int soma (int numUm , int numDois){
+	
+	return numUm+numDois;	
+}
+
+ public static void Main()
+        {
+ 	
+ 	Console.WriteLine("Escreva o primeiro número inteiro da soma:");
+ 	int numUm = int.Parse(Console.ReadLine());
+ 	Console.WriteLine("Escreva o segundo número inteiro da soma:");
+ 	int numDois = int.Parse(Console.ReadLine());
+ 	
+ 	int resultado = soma(numUm , numDois);
+ 	
+ 	Console.WriteLine("Resultado da soma é " + resultado);
+ 	
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
