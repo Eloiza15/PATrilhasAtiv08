@@ -1,0 +1,42 @@
+using System;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba um número inteiro como parâmetro e retorne
+//verdadeiro se o número for primo e falso caso contrário.
+
+        static bool verFal(int inteiro)
+        {
+        	if (inteiro <= 1){
+                return false;
+        	}
+        	
+        	for ( int i = 2; i <= Math.Sqrt(inteiro); i++){
+        		
+        		if (inteiro % i == 0){
+                    return false;
+        		}
+        	}
+        	return true;
+        }
+
+        public static void Main()
+        {
+            
+            Console.WriteLine("Digite um número inteiro:\n");
+            Console.WriteLine("Se o número for primo retornaremos 'True'");
+            int inteiro = int.Parse(Console.ReadLine());
+            
+            bool resultado = verFal(inteiro);
+            
+            Console.WriteLine("\nEsse número é: " + resultado);
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
