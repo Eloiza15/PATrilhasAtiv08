@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Exercicios
+{
+    class Program
+    {
+    	
+//Crie um método que receba uma lista de números inteiros como parâmetro e
+//retorne o menor número da lista
+	
+static int menor (List <int> numeros){
+	
+	return numeros.Min();
+	
+}
+
+public void Main()
+        {
+            
+            List<int> numeros = new List<int>();
+            
+            Console.WriteLine("Quantos números você quer colocar na lista?");
+            int quantidade = int.Parse(Console.ReadLine());
+
+           
+            for (int i = 1; i <= quantidade; i++)
+            {
+                Console.WriteLine("\nDigite o número " + i + " da lista");
+                int num = int.Parse(Console.ReadLine());
+                inteiros.Add(num);
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Pressione qualquer tecla para fechar.");
+            Console.ReadKey();
+        }
+    }
+}
